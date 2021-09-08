@@ -1,0 +1,587 @@
+@font-face {
+    font-family: "FbReforma-Regular";
+    src: url(./fonts/FbReforma-Regular.eot),
+      url(./fonts/FbReforma-Regular.svg) format("svg"),
+      url(./fonts/FbReforma-Regular.ttf) format("ttf"),
+      url(./fonts/FbReforma-Regular.woff) format("woff"),
+      url(./fonts/FbReforma-Regular.woff2) format("woff");
+  }
+  @font-face {
+    font-family: "Citroen-Light";
+    src: url(./fonts/FbReforma-Lightwebfont.eot),
+      url(./fonts/FbReforma-Lightwebfont.svg) format("svg"),
+      url(./fonts/FbReforma-Lightwebfont.ttf) format("ttf"),
+      url(./fonts/FbReforma-Lightwebfont.woff) format("woff"),
+      url(./fonts/FbReforma-Lightwebfont.woff2) format("woff");
+  }
+  @font-face {
+    font-family: "Citroen";
+    src: url(./fonts/Citroen.eot), url(./fonts/Citroen.svg) format("svg"),
+      url(./fonts/Citroen.ttf) format("ttf"),
+      url(./fonts/Citroen.woff) format("woff"),
+      url(./fonts/Citroen.woff2) format("woff");
+  }
+  @font-face {
+    font-family: "Citroen-Bold";
+    src: url(./fonts/Citroen-Bold.eot),
+      url(./fonts/Citroen-Bold.svg) format("svg"),
+      url(./fonts/Citroen-Bold.ttf) format("ttf"),
+      url(./fonts/Citroen-Bold.woff) format("woff"),
+      url(./fonts/Citroen-Bold.woff2) format("woff");
+  }
+
+  a {
+    color: inherit;
+  }
+  label {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "FbReforma-Regular", serif;
+    direction: rtl;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+  }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  :root {
+    --font-12px-mobile: 3vw;
+    --font-15px-mobile: 3.6vw;
+    --font-18px-mobile: 4.4vw;
+    --font-20px-mobile: 4.8vw;
+    --font-24px-mobile: 5.8vw;
+  }
+.safety_0{
+  background-color: #bf2026;
+}
+.safety_1{
+  background-color: #e36d25;
+}
+.safety_2{
+  background-color: #fec010;
+}
+.safety_3{
+  background-color: #31af89;
+}
+.safety_4{
+  background-color: #32859c;
+}
+.safety_5{
+  background-color: #278cc9;
+}
+.safety_6{
+  background-color: #1870b9;
+}
+.safety_7{
+  background-color: #426fb7;
+}
+.safety_8{
+  background-color: #415dab;
+}
+.polution_1{
+  background-color: #006543;
+}
+.polution_2{
+  background-color: #00854a;
+}
+.polution_3{
+  background-color: #00a651;
+}
+.polution_4{
+  background-color: #0db14b;
+}
+.polution_5{
+  background-color: #72bf44;
+}
+.polution_6{
+  background-color: #6dc067;
+}
+.polution_7{
+  background-color: #67c18c;
+}
+.polution_8{
+  background-color: #fff799;
+}
+.polution_9{
+  background-color: #fff200;
+}
+.polution_10{
+  background-color: #ffcb05;
+}
+.polution_11{
+  background-color: #f7941d;
+}
+.polution_12{
+  background-color: #f15a22;
+}
+.polution_13{
+  background-color: #ed1c24;
+}
+.polution_14{
+  background-color: #c4161c;
+}
+.polution_15{
+  background-color: #8b0304;
+}
+.back{
+  margin: 0 auto;
+  width: 59.5vw;
+  font-size: 1.2vw;
+  text-align: left;
+  padding: 2vw 0 0 0;
+  text-decoration: underline;
+  text-underline-offset: 0.1vw;
+  text-decoration-thickness: 1px;
+}
+.mobile .back{
+  width: inherit;
+  font-size: 4vw;
+  padding: 5vw 4.9vw;
+  text-underline-offset: 0.5vw;
+  text-decoration-thickness: 1px;
+}
+.contentPolution,
+  .contentSafety{
+    width: 59.5vw;
+    margin: 4vw auto 2vw;
+  }
+  .mobile .contentPolution, .mobile .contentSafety {
+    width: inherit;
+    margin: 3vw auto 7vw;
+    padding: 0 4.9vw;
+}
+  .polutionContent,
+  .polutionTitle,
+  .safetyContent,
+  .safetyTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1vw;
+  }
+  .mobile .polutionContent,.mobile .polutionTitle,.mobile .safetyContent,.mobile .safetyTitle {
+    font-size: 3.7vw;
+}
+.polutionTitle2{
+    margin-top: 3vw;
+}
+  .safetyTitle .safetyTitle-1{
+    width: 10vw;
+  }
+  .mobile .safetyTitle .safetyTitle-1{
+    width: 18vw;
+  }
+  .safetyTitle .safetyTitle-2{
+    width: 100%;
+  }
+  .safetyTitle .safetyTitle-3{
+    width: 15vw;
+  }
+  .mobile .safetyTitle .safetyTitle-3{
+    width: 24vw;
+  }
+  .safetyTitle p{
+    text-align: center;
+    border: solid 1px #ccc;
+    padding: 0.3vw 0;
+  }
+  .mobile .safetyTitle p{
+    padding: 1vw 0;
+  }
+  .safetyContent-1{
+    width: 10vw;
+  }
+  .mobile .safetyContent-1{
+    width: 18vw;
+  }
+  .safetyContent-2{
+    width: 100%;
+  }
+  .safetyContent-3{
+    width: 15vw;
+    color: #fff;
+  }
+  .mobile .safetyContent-3{
+    width: 24vw;
+  }
+  .safetyContent p{
+    text-align: center;
+    border: solid 1px #ccc;
+    padding: 0.3vw 0;
+  }
+  .mobile .safetyContent p{
+    height: 9vw;
+  }
+  .safetyGeneralWrapper{
+    width: 31vw;
+    margin: 2vw auto 0;
+  }
+  .mobile .safetyGeneralWrapper{
+    width: 75vw;
+    margin: 5vw auto 0;
+  }
+  .safetyGeneralWrapper h3{
+    font-size: 1.4vw;
+    font-weight: 100;
+  }
+  .mobile .polutionGeneralWrapper h3,
+  .mobile .safetyGeneralWrapper h3{
+    font-size: 3.7vw;
+  }
+  .safetyN{
+    width: 2.45vw;
+    height: 2.45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    color: #fff;
+    margin: 0 0.1vw;
+  }
+  .hiddenTxt{
+    height: 0;
+}
+  .hiddenTxt p{
+    width: 0;
+    height: 0 !important;
+    overflow: hidden;
+}
+  .mobile .safetyN{
+    width: 6.3vw;
+    height: 6.3vw;
+    font-size: 3.5vw;
+  }
+  .safetyTableLeft,
+  .safetyTableRight{
+    width: 3vw;
+    font-size: 0.85vw;
+    line-height: 0.9;
+    text-align: center;
+  }
+  .mobile .safetyTableLeft,
+  .mobile .safetyTableRight{
+    width: 6vw;
+    font-size: 2.5vw;
+    line-height: 0.7;
+  }
+  .safetyTableMiddle{
+    width: 100%;
+  }
+  .afetyTable{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #000;
+    padding: 0.5vw 0.2vw;
+    margin-top: 0.6vw;
+  }
+  .mobile .afetyTable{
+    padding: 1.5vw 0.2vw;
+    margin-top: 1.6vw;
+  }
+  .safetyTablemiddle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .polutionContent-1,
+  .polutionTitle-1{
+    width: 110vw;
+  }
+  .mobile .polutionContent-1, .mobile .polutionTitle-1 {
+    width: 100vw;
+}
+.polutionContent-21,
+.polutionTitle-21{
+    width: 50vw;
+}
+.mobile .polutionContent-21,
+.mobile .polutionTitle-21{
+    width: 27vw;
+}
+.polutionContent-22,
+.polutionTitle-22{
+    width: 15vw;
+}
+.polutionContent-23,
+.polutionTitle-23{
+    width: 12vw;
+}
+.mobile .polutionContent-23,
+.mobile .polutionTitle-23{
+    width: 27vw;
+}
+.polutionContent-24,
+.polutionTitle-24{
+    width: 11vw;
+}    
+.polutionContent-25,
+.polutionTitle-25{
+    width: 8.3vw;
+}
+.polutionContent-26,
+.polutionTitle-26{
+    width: 60vw;
+}
+.mobile .polutionContent-26,
+.mobile .polutionTitle-26{
+    width: 33vw;
+}
+.polutionContent-27,
+.polutionTitle-27{
+    width: 20vw;
+}
+.polutionContent-28,
+.polutionTitle-28{
+    width: 20vw;
+}
+.mobile .polutionContent-28,
+.mobile .polutionTitle-28{
+    width: 26vw;
+}
+.polutionContent-29,
+.polutionTitle-29{
+    width: 9.4vw;
+}
+  .polutionContent-2,
+  .polutionTitle-2{
+    width: 50vw;
+  }
+  .polutionContent-3,
+  .polutionTitle-3{
+    width: 15vw;
+  }
+  .mobile .polutionContent-3,
+  .mobile .polutionTitle-3{
+    width: 20vw;
+  }
+  .polutionTitle div,
+  .polutionTitle p {
+    text-align: center;
+    border: solid 1px #ccc;
+    padding: 0.3vw 0;
+    height: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.9;
+}
+  .mobile .polutionTitle p {
+    height: 8vw;
+}
+  .mobile .polutionTitle.polutionTitle2 p {
+    height: 24vw;
+}
+  .polutionContent > div,
+  .polutionContent > p {
+    text-align: center;
+    border: solid 1px #ccc;
+    padding: 0.4vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.9;
+}
+  .mobile .polutionContent > div,
+  .mobile .polutionContent > p {
+    height: 10vw;
+}
+.polutionContent-2.polutionContent-2{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile .polutionContent-2.polutionContent-2{
+  height: 10.8vw;
+}
+.polutionContent-2.polutionContent-2 p{
+  text-align: center;
+  border: none;
+  padding: 0.4vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0.9;
+  width: 100%;
+}
+.mobile .polutionContent-2.polutionContent-2 p{
+  height: 11vw;
+}
+.polutionContent-2.polutionContent-2 .polutionContent-21{
+border-left: 1px solid #ccc;
+}
+.polutionGeneralWrapper{
+  width: 45.1vw;
+  margin: 2vw auto 0;
+}
+.mobile .polutionGeneralWrapper{
+  width: inherit;
+  margin: 2vw auto 0;
+}
+.polutionGeneralWrapper h3{
+  font-size: 1.4vw;
+  font-weight: 100;
+}
+.polutionN{
+  width: 2.1vw;
+  height: 2.1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 0.85vw;
+}
+.mobile .polutionN{
+  width: 4.3vw;
+  height: 4.3vw;
+  font-size: 3.5vw;
+}
+.polutionTableLeft,
+.polutionTableRight{
+  font-size: 0.9vw;
+  width: 4vw;
+}
+.mobile .polutionTableLeft,
+.mobile .polutionTableRight{
+  font-size: 2.5vw;
+  width: 11vw;
+  text-align: center;
+}
+.polutionTablemiddle,
+.polutionTable{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.polutionTable{
+  margin-top: 0.6vw;
+border: 1px solid #000;
+padding: 0.5vw 2.2vw;
+}
+.mobile .polutionTable{
+  padding: 1.5vw 0.5vw;
+  margin-top: 1.5vw;
+}
+.generalTxt{
+  margin: 1vw 0 4vw;
+}
+.generalTxt span{
+  font-size: 1.05vw;
+}
+.mobile .generalTxt{
+  margin: 3vw 0 4vw;
+}
+.mobile .generalTxt span{
+  font-size: 3.7vw;
+  line-height: 1.2;
+}
+.accessability{
+    width: 41.5vw;
+    margin: 5vw auto;
+    font-size: calc(0.95vw + 3px);
+    line-height: 1.2;
+}
+.accessability h1{
+    font-size: 2.2vw;
+    margin-bottom: 1vw;
+}
+.accessability h3{
+    font-size: 1.6vw;
+    margin: 2vw 0 0.5vw;
+}
+.accessability h2{
+    font-size: 1.2vw;
+    margin: 1vw 0 0.5vw;
+}
+.accessability a{
+text-decoration: underline;
+}
+.accessability a:hover{
+color: blue;
+}
+.wrapperRow{
+    width: 7vw;
+    text-align: center;
+}
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.tableValue p{
+    font-size: 0.95vw;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    line-height: 1.2;
+    height: 3.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tableValue p:last-child{
+    border-bottom: 1px solid #000;
+}
+.tableTitle{
+    font-size: 0.95vw;
+    font-weight: 600;
+    line-height: 1;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 0.5vw;
+}
+.wrapperRow:last-child .tableValue p,
+.wrapperRow:last-child .tableTitle{
+    border-left: 1px solid #000;
+}
+.otherContent p{
+line-height: 1.4;
+}
+.mobile .accessability {
+    width: 91vw;
+    margin: 0vw auto;
+    font-size: calc(3.5vw + 3px);
+    line-height: 1.2;
+    padding: 0 4vw;
+}
+.mobile .accessability h1 {
+    font-size: 6.2vw;
+    margin-bottom: 2vw;
+}
+.mobile .accessability h2 {
+    font-size: 5.2vw;
+    margin: 3vw 0 2.5vw;
+}
+.mobile .accessability h3 {
+    font-size: 4.6vw;
+    margin: 4vw 0 2.5vw;
+}
+.mobile .wrapperRow {
+    width: 14.5vw;
+    text-align: center;
+}
+.mobile .tableTitle {
+    font-size: 2.2vw;
+    font-weight: 600;
+    line-height: 1;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 1vw 0;
+}
+.mobile .tableValue p {
+    font-size: 2.1vw;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    line-height: 1.2;
+    height: 7.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

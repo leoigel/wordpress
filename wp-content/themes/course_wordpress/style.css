@@ -1,0 +1,229 @@
+/**********************************************/
+/*  Theme Name: Leonardo Igel
+/**********************************************/
+
+* {
+    margin:0;
+    padding: 0;
+}
+body .only_desktop{
+    display: block;
+}
+body .only_desktop_flex{
+    display: flex;
+}
+body .only_mobile{
+    display: none;
+}
+body .only_mobile_flex{
+    display: none;
+}
+body.mobile .only_desktop{
+    display: none;
+}
+body.mobile .only_desktop_flex{
+    display: none;
+}
+body.mobile .only_mobile{
+    display: block;
+}
+body.mobile .only_mobile_flex{
+    display: flex;
+}
+.safety_0{
+    background-color: #bf2026;
+  }
+  .safety_1{
+    background-color: #e36d25;
+  }
+  .safety_2{
+    background-color: #fec010;
+  }
+  .safety_3{
+    background-color: #31af89;
+  }
+  .safety_4{
+    background-color: #32859c;
+  }
+  .safety_5{
+    background-color: #278cc9;
+  }
+  .safety_6{
+    background-color: #1870b9;
+  }
+  .safety_7{
+    background-color: #426fb7;
+  }
+  .safety_8{
+    background-color: #415dab;
+  }
+  .polution_1{
+    background-color: #006543;
+  }
+  .polution_2{
+    background-color: #00854a;
+  }
+  .polution_3{
+    background-color: #00a651;
+  }
+  .polution_4{
+    background-color: #0db14b;
+  }
+  .polution_5{
+    background-color: #72bf44;
+  }
+  .polution_6{
+    background-color: #6dc067;
+  }
+  .polution_7{
+    background-color: #67c18c;
+  }
+  .polution_8{
+    background-color: #fff799;
+  }
+  .polution_9{
+    background-color: #fff200;
+  }
+  .polution_10{
+    background-color: #ffcb05;
+  }
+  .polution_11{
+    background-color: #f7941d;
+  }
+  .polution_12{
+    background-color: #f15a22;
+  }
+  .polution_13{
+    background-color: #ed1c24;
+  }
+  .polution_14{
+    background-color: #c4161c;
+  }
+  .polution_15{
+    background-color: #8b0304;
+  }
+
+@font-face {
+  font-family: "FbReforma-Regular";
+  src: url(./fonts/FbReforma-Regular.eot),
+    url(./fonts/FbReforma-Regular.svg) format("svg"),
+    url(./fonts/FbReforma-Regular.ttf) format("ttf"),
+    url(./fonts/FbReforma-Regular.woff) format("woff"),
+    url(./fonts/FbReforma-Regular.woff2) format("woff");
+}
+@font-face {
+  font-family: "Citroen-Light";
+  src: url(./fonts/FbReforma-Lightwebfont.eot),
+    url(./fonts/FbReforma-Lightwebfont.svg) format("svg"),
+    url(./fonts/FbReforma-Lightwebfont.ttf) format("ttf"),
+    url(./fonts/FbReforma-Lightwebfont.woff) format("woff"),
+    url(./fonts/FbReforma-Lightwebfont.woff2) format("woff");
+}
+@font-face {
+  font-family: "Citroen";
+  src: url(./fonts/Citroen.eot), 
+    url(./fonts/Citroen.svg) format("svg"),
+    url(./fonts/Citroen.ttf) format("ttf"),
+    url(./fonts/Citroen.woff) format("woff"),
+    url(./fonts/Citroen.woff2) format("woff");
+}
+@font-face {
+  font-family: "Citroen-Bold";
+  src: url(./fonts/Citroen-Bold.eot),
+    url(./fonts/Citroen-Bold.svg) format("svg"),
+    url(./fonts/Citroen-Bold.ttf) format("ttf"),
+    url(./fonts/Citroen-Bold.woff) format("woff"),
+    url(./fonts/Citroen-Bold.woff2) format("woff");
+}
+
+/* .bg_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.bg_image {
+    min-height: 102vh;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 0 -10vw;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.car_image {
+    position: absolute;
+    bottom: 18vw;
+    right: 19.5vw;
+    width: 56vw;
+}
+
+.cars-slider-container {
+    position: absolute;
+    bottom: -10vw;
+    width: 100%;
+    overflow: hidden;
+    z-index: 99;
+    padding-right: 1vw;
+    width:75%;
+    left: 50%;
+    top: 90.6%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.wrapper{
+    width:100%;
+    padding-top: 20px;
+    text-align:center;
+  }
+
+  .carousel{
+    width:90%;
+    margin:0px auto;
+    display: flex;
+  }
+  .slick-slide{
+    margin:10px;
+  }
+  .slick-slide img{
+    width:100%;
+    border: 0px solid inherit;
+  }
+  /* .wrapper .slick-dots li button:before {
+    font-size:20px;
+    color:white;
+  } */
+
+.cars-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    transition: all 0.4s linear;
+}
+
+.slickSlider {
+    width: 16vw;
+    width: 20.5vw!important;
+}
+.slickSlider img{
+width: 100%;
+}
+
+
+
+/*********************************/
+/* FORM-TOP
+/*********************************/
+
+/* .neon {
+  color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #0ff,
+    0 0 5px #0ff, 0 0 6px #0ff, 0 0 7px #0ff, 0 0 8px #0ff;
+} */
+
+/************** 
+*****Form 1
+***************/
